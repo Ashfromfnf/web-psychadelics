@@ -34,41 +34,46 @@ body {
     position: fixed;
     font-family: arcade;
     color: darkorchid;
-    left: 5px;
-    top: 5px;
+    left: 15px;
+    top: 15px;
     stroke: black;
-    stroke-width: 1px;
+    stroke-width: 3px;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 3px;
     
     background-color: black;
     border-style: solid;
-    border-width: 2px;
+    border-radius: 0px;
+    border-width: 5px;
     border-color: rgb(61, 0, 38);
-    width: 75px;
-    height: 75px;
+    width: 125px;
+    height: 125px;
     
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 50px;
+
     text-align: center;
     text-justify: center;
 
     justify-content: center;
     align-content: center;
 
-    transition: 650ms;
+    transition: 950ms;
 
     z-index: 900;
 
     &:hover {
         background-color: #a5346d;
-        transition: 650ms;
+        transition: 950ms;
+        border-radius: 45px;
     }
 
     &:active {
         background-color: #c300ff;
         transition: 150ms;
-    }
-    div {
-        font-size: xx-large;
+        border-radius: 55px;
     }
 
 }
@@ -77,6 +82,12 @@ body {
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
+}
+
+.smallGlow {
+    -webkit-animation: glow2 1s ease-in-out infinite alternate;
+    -moz-animation: glow2 1s ease-in-out infinite alternate;
+    animation: glow2 1s ease-in-out infinite alternate;
 }
 
 
@@ -90,6 +101,10 @@ body {
     text-align: center;
 }
 
+#bigTxt {
+    font-size: 120px;
+}
+
 
 @keyframes glow {
     from {
@@ -97,5 +112,14 @@ body {
     }
     to {
         text-shadow: 0 0 20px #fff, 0 0 30px #f86db3, 0 0 40px #a5346d, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@keyframes glow2 {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e600db, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #f86db3, 0 0 20px #a5346d, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
     }
 }

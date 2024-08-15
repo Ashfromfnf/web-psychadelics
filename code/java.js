@@ -28,4 +28,5 @@ function fullscreen(i) {
     }
 
     document.getElementById("F11").style.opacity = 0
+    document.getElementById("F11").style.borderRadius = "200px"
 }
